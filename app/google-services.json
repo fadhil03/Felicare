@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "22553122662",
+    "project_id": "felicare",
+    "storage_bucket": "felicare.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:22553122662:android:86554891d7b65dc39f1aa7",
+        "android_client_info": {
+          "package_name": "com.c22pc415.felicare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "22553122662-kljtvgancoinvf8fbe2glb1nl795bonk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJ0pJs0zW-g8VXQE3ZdhfldioHiJW4Mtg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "22553122662-kljtvgancoinvf8fbe2glb1nl795bonk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

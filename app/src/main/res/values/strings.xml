@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Felicare</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login">Login</string>
+    <string name="image_login">image login</string>
+    <string name="or_regis">or register</string>
+    <string name="name">Name</string>
+    <string name="regis">Register</string>
+    <string name="greeting">Take care of your cat</string>
+    <string name="register_image">image register</string>
+    <string name="cdesc_pick_image">button back</string>
+    <string name="et_phone_error_message">Phone number is not valid!</string>
+    <string name="et_password_error_message">Passwords must be at least 6 characters</string>
+    <string name="et_email_error_message">Email address is not valid</string>
+    <string name="cat_name">Cat name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="cat_health_check">Cat Health Check</string>
+    <string name="start">Start</string>
+    <string name="cat_health_history">Cat Health History</string>
+    <string name="must_not_be_empty">Must not be empty!</string>
+    <string name="succes_regis">Successfully registration, please login to continue</string>
+    <string name="title_activity_bottom_navigation_view">BottomNavigationView</string>
+    <string name="title_home">Home</string>
+    <string name="title_news">News</string>
+    <string name="title_profile">Profile</string>
+    <string name="health_percent">80%</string>
+    <string name="healty">healty</string>
+    <string name="my_cat">My (name of the cat)</string>
+    <string name="felicare_image_logo">Felicare Image Logo</string>
+    <string name="see_more">see more...</string>
+    <string name="health_check_info">Please fill in the following questions from the symptoms that occur in your cat...</string>
+    <string name="question">question...</string>
+    <string name="answer">answer</string>
+    <string name="diagnosis">Diagnosis</string>
+    <string name="logout">Logout</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="phonecall">Phone Number</string>
+</resources>
