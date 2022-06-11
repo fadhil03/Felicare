@@ -37,4 +37,11 @@
     <string name="logout">Logout</string>
     <string name="welcome_back">Welcome Back</string>
     <string name="phonecall">Phone Number</string>
+    <string name="Yes">Yes</string>
+    <string name="no">No</string>
+    <string name="x_disease">X Disease</string>
+    <string name="exp_date">June 10, 2022</string>
+    <string name="occours_because">Occours Because :</string>
+    <string name="exp_lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing erat a odio fermentum orci, eu, diam. Venenatis netus leo viverra id eget et. Molestie tincidunt rutrum magna in. Odio pellentesque vitae imperdiet amet, pulvinar .</string>
+    <string name="handling">Handling :</string>
 </resources>

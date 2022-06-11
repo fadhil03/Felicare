@@ -96,6 +96,32 @@
             android:layout_marginTop="18dp"
             android:text="@string/question" />
 
+        <RadioGroup
+            android:id="@+id/opsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Yes" />
+
+            <RadioButton
+                android:id="@+id/no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no" />
+        </RadioGroup>
+
+        <TextView
+            style="@style/TextAppearance.Felicare.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="@string/question" />
+
         <EditText
             android:id="@+id/et_answare"
             android:layout_width="0dp"
@@ -117,44 +143,23 @@
             android:layout_marginTop="18dp"
             android:text="@string/question" />
 
-        <ExpandableListView
-            android:id="@+id/expandableListViewSample"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:divider="@android:color/darker_gray"
-            android:dividerHeight="0.5dp"
-            android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft" />
-
-        <TextView
-            style="@style/TextAppearance.Felicare.Body1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="18dp"
-            android:text="@string/question" />
-
         <RadioGroup
-            android:id="@+id/opsi"
+            android:id="@+id/opsi2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <RadioButton
-                android:id="@+id/java"
+                android:id="@+id/yes2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/answer" />
+                android:text="@string/Yes" />
 
             <RadioButton
-                android:id="@+id/kotlin"
+                android:id="@+id/no2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/answer" />
-
-            <RadioButton
-                android:id="@+id/cpp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/answer" />
+                android:text="@string/no" />
         </RadioGroup>
 
 
@@ -165,14 +170,12 @@
         style="@style/TextAppearance.Felicare.Button"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="50dp"
+        android:layout_margin="20dp"
         android:background="@drawable/bg_button_outlined"
         android:text="@string/diagnosis"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
