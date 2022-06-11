@@ -21,7 +21,19 @@
         app:layout_constraintTop_toTopOf="parent"
         app:tint="?attr/colorOnPrimary" />
 
-    <ImageButton
+    <ImageView
+        android:id="@+id/btn_history"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/ic_history"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:clickable="true"
+        android:focusable="true" />
+
+ <!--   <ImageButton
         android:id="@+id/btn_history"
         android:layout_width="46dp"
         android:layout_height="46dp"
@@ -31,7 +43,7 @@
         android:background="@drawable/bg_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:tint="?attr/colorOnPrimary" />
+        app:tint="@color/white" />-->
 
     <ImageView
         android:id="@+id/imageView3"
@@ -151,10 +163,31 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/handling" />
-
-
         </androidx.constraintlayout.widget.ConstraintLayout>
-
     </ScrollView>
+
+    <Button
+        android:id="@+id/btn_telp"
+        style="@style/TextAppearance.Felicare.Button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_button"
+        android:text="@string/call_doc"
+        app:layout_constraintBottom_toTopOf="@id/btn_home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_home"
+        style="@style/TextAppearance.Felicare.Button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/bg_button_outlined"
+        android:text="@string/back_to_home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

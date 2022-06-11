@@ -44,4 +44,10 @@
     <string name="occours_because">Occours Because :</string>
     <string name="exp_lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing erat a odio fermentum orci, eu, diam. Venenatis netus leo viverra id eget et. Molestie tincidunt rutrum magna in. Odio pellentesque vitae imperdiet amet, pulvinar .</string>
     <string name="handling">Handling :</string>
+    <string name="back_to_home">Back to Home</string>
+    <string name="call_doc">Call Doctor</string>
+    <string name="history_health_check">History Health Check</string>
+    <string name="no_history">No History</string>
+    <string name="coming_soon">coming soon...</string>
+    <string name="re_enter_password">Re-enter Password</string>
 </resources>

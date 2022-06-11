@@ -44,7 +44,7 @@ class PasswordEt : AppCompatEditText {
         inputType = InputType.TYPE_TEXT_VARIATION_PASSWORD
         compoundDrawablePadding = 16
 
-        setHint("Password")
+
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             setAutofillHints(AUTOFILL_HINT_PASSWORD)
         }

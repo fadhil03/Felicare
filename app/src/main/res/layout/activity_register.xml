@@ -12,7 +12,7 @@
         android:layout_height="wrap_content">
 
         <ImageButton
-            android:id="@+id/btn_back"
+            android:id="@+id/btn_backtologin"
             android:layout_width="46dp"
             android:layout_height="46dp"
             android:layout_marginStart="20dp"
@@ -130,6 +130,21 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/et_email_register" />
 
+        <com.c22pc415.felicare.ui.component.PasswordEt
+            android:id="@+id/et_password_reenter"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/bg_custom_edittext"
+            android:drawableStart="@drawable/ic_lock"
+            android:hint="@string/re_enter_password"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="20dp"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_password_register" />
+
         <Button
             android:id="@+id/btn_register"
             style="@style/TextAppearance.Felicare.Button"
@@ -143,7 +158,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/et_password_register"
+            app:layout_constraintTop_toBottomOf="@+id/et_password_reenter"
             app:layout_constraintVertical_bias="0.0" />
 
         <ProgressBar

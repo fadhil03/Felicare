@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.c22pc415.felicare.databinding.FragmentHomeBinding
 import com.c22pc415.felicare.ui.HealthCheckActivity
+import com.c22pc415.felicare.ui.HistoryActivity
 
 class HomeFragment : Fragment() {
     private var _binding: FragmentHomeBinding? = null
@@ -27,8 +28,12 @@ class HomeFragment : Fragment() {
 
     private fun setupView(){
         binding.btnStartcheck.setOnClickListener(){
-            val `in` = Intent(activity, HealthCheckActivity::class.java)
-            startActivity(`in`)
+            val intentToHealt = Intent(activity, HealthCheckActivity::class.java)
+            startActivity(intentToHealt)
+        }
+        binding.seeMore.setOnClickListener(){
+            val intentToHistory = Intent(activity, HistoryActivity::class.java)
+            startActivity(intentToHistory)
         }
     }
 

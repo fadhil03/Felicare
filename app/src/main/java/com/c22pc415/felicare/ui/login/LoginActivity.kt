@@ -4,10 +4,10 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Patterns
 import android.view.View
-import android.widget.Toast
+import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import com.c22pc415.felicare.MainActivity
-import com.c22pc415.felicare.databinding.ActivityLoginBinding
+import com.c22pc415.felicare.R
 import com.c22pc415.felicare.ui.component.CustomDialog
 import com.c22pc415.felicare.ui.register.RegisterActivity
 import com.google.firebase.auth.AuthCredential
@@ -16,19 +16,27 @@ import com.google.firebase.auth.FirebaseAuth
 
 class LoginActivity : AppCompatActivity() {
     private lateinit var auth : FirebaseAuth
-    private lateinit var binding: ActivityLoginBinding
+    //private lateinit var binding: ActivityLoginBinding
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        binding = ActivityLoginBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        //binding = ActivityLoginBinding.inflate(layoutInflater)
+        //setContentView(binding.root)
+        setContentView(R.layout.activity_login)
         super.onCreate(savedInstanceState)
+
+        val btnLogin : Button = findViewById(R.id.btn_login)
+        val etEmail : EditText = findViewById(R.id.et_email)
+        val etPassword : EditText = findViewById(R.id.et_password)
+        val tvOrRegis : TextView = findViewById(R.id.tv_or_regis)
 
      //   initActionBar()
         initFirebaseAuth()
 
-        binding.btnLogin.setOnClickListener {
-            val email = binding.etEmail.text.toString().trim()
-            val pass = binding.etPassword.text.toString().trim()
+        btnLogin.setOnClickListener {
+            val email = etEmail.text.toString().trim()
+            val pass = etPassword.text.toString().trim()
 
             if (checkValidation(email, pass)){
                 loginToServer(email, pass)
@@ -40,7 +48,7 @@ class LoginActivity : AppCompatActivity() {
             finish()
         }*/
 
-        binding.tvOrRegis.setOnClickListener {
+        tvOrRegis.setOnClickListener {
             startActivity(Intent(this, RegisterActivity::class.java))
         }
     }
@@ -50,6 +58,7 @@ class LoginActivity : AppCompatActivity() {
     private fun loginToServer(email: String, pass: String) {
         val credential = EmailAuthProvider.getCredential(email, pass)
         fireBaseAuth(credential)
+        CustomDialog.showLoading(this)
     }
 
     private fun fireBaseAuth(credential: AuthCredential) {
@@ -70,15 +79,16 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun checkValidation(email: String, pass: String): Boolean {
+        val etEmail : EditText = findViewById(R.id.et_email)
         if (email.isEmpty()){
-            binding.etEmail.error = "Please field your email"
-            binding.etEmail.requestFocus()
+            etEmail.error = "Please field your email"
+            etEmail.requestFocus()
         }else if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
-            binding.etEmail.error = "Please use valid email"
-            binding.etEmail.requestFocus()
+            etEmail.error = "Please use valid email"
+            etEmail.requestFocus()
         }else if (pass.isEmpty()){
-            binding.etEmail.error = "Please field your password"
-            binding.etEmail.requestFocus()
+            etEmail.error = "Please field your password"
+            etEmail.requestFocus()
         }else{
             return true
         }

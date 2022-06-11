@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Felicare">
         <activity
+            android:name=".ui.HistoryActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.ResultCheckActivity"
             android:exported="false" />
         <activity
