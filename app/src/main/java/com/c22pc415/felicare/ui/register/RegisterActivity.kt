@@ -5,9 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Patterns
 import android.widget.*
-import com.c22pc415.felicare.MainActivity
+import com.c22pc415.felicare.ui.main.MainActivity
 import com.c22pc415.felicare.R
-import com.c22pc415.felicare.databinding.ActivityRegisterBinding
 import com.c22pc415.felicare.ui.component.CustomDialog
 import com.c22pc415.felicare.ui.login.LoginActivity
 import com.google.firebase.auth.FirebaseAuth
@@ -49,7 +48,8 @@ class RegisterActivity : AppCompatActivity() {
             .addOnCompleteListener{task ->
                 CustomDialog.hideLoading()
                 if (task.isSuccessful){
-                    startActivity(Intent(this, MainActivity::class.java))
+                    Toast.makeText(this, getString(R.string.regis_success), Toast.LENGTH_SHORT).show()
+                    startActivity(Intent(this, LoginActivity::class.java))
                     finishAffinity()
                 }
             }
@@ -76,8 +76,8 @@ class RegisterActivity : AppCompatActivity() {
             etPasswordReenter.error = "Please field your confirm password"
             etPasswordReenter.requestFocus()
         }else if (pass != confirmPass){
-            etPasswordRegister.error = "Your pass didnt match"
-            etPasswordReenter.error = "Your confirm pass didnt match"
+            etPasswordRegister.error = getString(R.string.pass_didntm)
+            etPasswordReenter.error = getString(R.string.pass_conf_didnm)
 
             etPasswordRegister.requestFocus()
             etPasswordReenter.requestFocus()

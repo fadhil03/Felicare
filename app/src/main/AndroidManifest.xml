@@ -12,16 +12,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Felicare">
         <activity
-            android:name=".ui.HistoryActivity"
+            android:name=".ui.news.DetailNewsActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.ResultCheckActivity"
+            android:name=".ui.history.HistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.result.ResultCheckActivity"
             android:exported="false" />
         <activity
             android:name=".ui.register.RegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.SplashScreen"
+            android:name=".ui.splashscreen.SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -33,10 +36,10 @@
             android:name=".ui.login.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.HealthCheckActivity"
+            android:name=".ui.healthcheck.HealthCheckActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.main.MainActivity"
             android:exported="false" />
     </application>
 

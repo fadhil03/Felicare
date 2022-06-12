@@ -7,17 +7,17 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.c22pc415.felicare.HomeFragment"
+        android:name="com.c22pc415.felicare.ui.main.fragment.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/newsFragment"
-        android:name="com.c22pc415.felicare.NewsFragment"
+        android:name="com.c22pc415.felicare.ui.main.fragment.NewsFragment"
         android:label="fragment_news"
         tools:layout="@layout/fragment_news" />
     <fragment
         android:id="@+id/profileFragment"
-        android:name="com.c22pc415.felicare.ProfileFragment"
+        android:name="com.c22pc415.felicare.ui.main.fragment.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
 </navigation>

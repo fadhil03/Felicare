@@ -1,12 +1,11 @@
-package com.c22pc415.felicare.ui
+package com.c22pc415.felicare.ui.history
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import com.c22pc415.felicare.MainActivity
+import com.c22pc415.felicare.ui.main.MainActivity
 import com.c22pc415.felicare.R
-import com.c22pc415.felicare.ui.register.RegisterActivity
 
 class HistoryActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

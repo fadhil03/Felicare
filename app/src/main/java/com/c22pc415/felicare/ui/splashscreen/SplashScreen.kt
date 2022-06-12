@@ -1,10 +1,10 @@
-package com.c22pc415.felicare.ui
+package com.c22pc415.felicare.ui.splashscreen
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
-import com.c22pc415.felicare.MainActivity
+import com.c22pc415.felicare.ui.main.MainActivity
 import com.c22pc415.felicare.R
 import com.c22pc415.felicare.ui.login.LoginActivity
 import com.google.firebase.auth.FirebaseAuth

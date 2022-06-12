@@ -6,93 +6,121 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".ui.register.RegisterActivity">
-        <ImageView
-            android:id="@+id/img_login"
-            android:layout_width="wrap_content"
-            android:layout_height="200dp"
-            android:src="@drawable/person"
-            android:contentDescription="@string/image_login"
-            android:layout_marginTop="20dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_greeting" />
 
-        <TextView
-            android:id="@+id/tv_greeting"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            style="@style/TextAppearance.Felicare.Headline"
-            android:text="@string/app_name"
-            android:textSize="40dp"
-            android:textColor="@color/orange"
-            android:layout_marginTop="50dp"
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-        <TextView
-            android:id="@+id/tv_login"
-            style="@style/TextAppearance.Felicare.Title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="16dp"
-            android:text="@string/login"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/img_login" />
+            app:layout_constraintTop_toTopOf="parent">
 
-        <com.c22pc415.felicare.ui.component.EmailEt
-            android:id="@+id/et_email"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="20dp"
-            android:background="@drawable/bg_custom_edittext"
-            android:drawableStart="@drawable/ic_email"
-            android:hint="@string/email"
-            android:inputType="textEmailAddress"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_login" />
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
-        <com.c22pc415.felicare.ui.component.PasswordEt
-            android:id="@+id/et_password"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="25dp"
-            android:layout_marginEnd="20dp"
-            android:background="@drawable/bg_custom_edittext"
-            android:drawableStart="@drawable/ic_lock"
-            android:hint="@string/password"
-            android:inputType="textPassword"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/et_email" />
+                        <ImageView
+                            android:id="@+id/img_login"
+                            android:layout_width="wrap_content"
+                            android:layout_height="200dp"
+                            android:layout_marginTop="20dp"
+                            android:contentDescription="@string/image_login"
+                            android:src="@drawable/person"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_greeting" />
 
-        <Button
-            android:id="@+id/btn_login"
-            style="@style/TextAppearance.Felicare.Button"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginEnd="20dp"
-            android:background="@drawable/bg_button"
-            android:text="@string/login"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/et_password" />
 
-        <TextView
-            android:id="@+id/tv_or_regis"
-            style="@style/TextAppearance.Felicare.Body1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:text="@string/or_regis"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/btn_login" />
+                        <ImageView
+                            android:id="@+id/tv_greeting"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="50dp"
+                            android:src="@drawable/ic_felitxt"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                        <!--        <TextView
+                                    android:id="@+id/tv_greeting"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    style="@style/TextAppearance.Felicare.Headline"
+                                    android:text="@string/app_name"
+                                    android:textSize="40dp"
+                                    android:textColor="@color/orange"
+                                    android:layout_marginTop="50dp"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />-->
+                        <TextView
+                            android:id="@+id/tv_login"
+                            style="@style/TextAppearance.Felicare.Title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="16dp"
+                            android:text="@string/login"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/img_login" />
+
+                        <com.c22pc415.felicare.ui.component.EmailEt
+                            android:id="@+id/et_email"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="20dp"
+                            android:background="@drawable/bg_custom_edittext"
+                            android:drawableStart="@drawable/ic_email"
+                            android:hint="@string/email"
+                            android:inputType="textEmailAddress"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_login" />
+
+                        <com.c22pc415.felicare.ui.component.PasswordEt
+                            android:id="@+id/et_password"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="25dp"
+                            android:layout_marginEnd="20dp"
+                            android:background="@drawable/bg_custom_edittext"
+                            android:drawableStart="@drawable/ic_lock"
+                            android:hint="@string/password"
+                            android:inputType="textPassword"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/et_email" />
+
+                        <Button
+                            android:id="@+id/btn_login"
+                            style="@style/TextAppearance.Felicare.Button"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="32dp"
+                            android:layout_marginEnd="20dp"
+                            android:background="@drawable/bg_button"
+                            android:text="@string/login"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/et_password" />
+
+                        <TextView
+                            android:id="@+id/tv_or_regis"
+                            style="@style/TextAppearance.Felicare.Body1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="32dp"
+                            android:text="@string/or_regis"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/btn_login" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,7 +2,6 @@
     <string name="app_name">Felicare</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="login">Login</string>
     <string name="image_login">image login</string>
     <string name="or_regis">or register</string>
     <string name="name">Name</string>
@@ -42,7 +41,6 @@
     <string name="x_disease">X Disease</string>
     <string name="exp_date">June 10, 2022</string>
     <string name="occours_because">Occours Because :</string>
-    <string name="exp_lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing erat a odio fermentum orci, eu, diam. Venenatis netus leo viverra id eget et. Molestie tincidunt rutrum magna in. Odio pellentesque vitae imperdiet amet, pulvinar .</string>
     <string name="handling">Handling :</string>
     <string name="back_to_home">Back to Home</string>
     <string name="call_doc">Call Doctor</string>
@@ -50,4 +48,22 @@
     <string name="no_history">No History</string>
     <string name="coming_soon">coming soon...</string>
     <string name="re_enter_password">Re-enter Password</string>
+    <string name="login">Login</string>
+    <string name="exp_lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing erat a odio fermentum orci, eu, diam. Venenatis netus leo viverra id eget et. Molestie tincidunt rutrum magna in. Odio pellentesque vitae imperdiet amet, pulvinar .</string>
+    <string name="regis_success">Registration Successful, please login to continue</string>
+    <string name="sign_failed">Sign-In failed</string>
+    <string name="pass_didntm">Your pass didnt match</string>
+    <string name="pass_conf_didnm">Your confirm pass didnt match</string>
+    <string-array name="titlenews">
+        <item>56995</item>
+        <item>5153</item>
+        <item>7972</item>
+        <item>14725</item>
+        <item>788</item>
+        <item>18628</item>
+        <item>277</item>
+        <item>178</item>
+        <item>428</item>
+        <item>465</item>
+    </string-array>
 </resources>

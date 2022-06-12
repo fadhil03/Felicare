@@ -1,4 +1,4 @@
-package com.c22pc415.felicare
+package com.c22pc415.felicare.ui.main.fragment
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,8 +7,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.c22pc415.felicare.databinding.FragmentHomeBinding
-import com.c22pc415.felicare.ui.HealthCheckActivity
-import com.c22pc415.felicare.ui.HistoryActivity
+import com.c22pc415.felicare.ui.healthcheck.HealthCheckActivity
+import com.c22pc415.felicare.ui.history.HistoryActivity
 
 class HomeFragment : Fragment() {
     private var _binding: FragmentHomeBinding? = null

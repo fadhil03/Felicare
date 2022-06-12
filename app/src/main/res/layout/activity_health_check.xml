@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
-    tools:context=".ui.HealthCheckActivity">
+    tools:context=".ui.healthcheck.HealthCheckActivity">
 
     <ImageView
         android:id="@+id/imageView2"

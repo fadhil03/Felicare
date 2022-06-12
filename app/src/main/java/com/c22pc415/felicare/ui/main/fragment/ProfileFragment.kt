@@ -1,4 +1,4 @@
-package com.c22pc415.felicare
+package com.c22pc415.felicare.ui.main.fragment
 
 import android.content.Intent
 import android.os.Bundle

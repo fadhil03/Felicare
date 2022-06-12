@@ -1,15 +1,13 @@
-package com.c22pc415.felicare.ui
+package com.c22pc415.felicare.ui.result
 
 import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.c22pc415.felicare.MainActivity
-import com.c22pc415.felicare.R
-import com.c22pc415.felicare.databinding.ActivityLoginBinding
-import com.c22pc415.felicare.databinding.ActivityRegisterBinding
+import com.c22pc415.felicare.ui.main.MainActivity
 import com.c22pc415.felicare.databinding.ActivityResultCheckBinding
-import com.c22pc415.felicare.ui.register.RegisterActivity
+import com.c22pc415.felicare.ui.healthcheck.HealthCheckActivity
+import com.c22pc415.felicare.ui.history.HistoryActivity
 
 class ResultCheckActivity : AppCompatActivity() {
     private lateinit var binding: ActivityResultCheckBinding
